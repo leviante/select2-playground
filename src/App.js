@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import DATA from "./assets/data"
+
+import Select2Refactor from "./components/select2-refactor/select2";
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <Select2Refactor type="select" data={DATA} optionCount={7} />
       </header>
     </div>
   );
