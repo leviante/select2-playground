@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import DATA from "./assets/data"
+import DATA from "./assets/data";
+import CATEGORY_DATA from "./assets/categoryData";
 
 import Select2Refactor from "./components/select2-refactor/select2";
 
@@ -22,7 +23,7 @@ function App() {
         >
           Learn React
         </a>
-        <Select2Refactor type="select" data={DATA} optionCount={7} />
+        <Select2Refactor type="select-tag" categoryData={CATEGORY_DATA} data={DATA} optionCount={7} />
       </header>
     </div>
   );
